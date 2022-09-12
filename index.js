@@ -2,9 +2,9 @@ const { parse } = require('csv-parse');
 const fs = require('fs');
 
 const result = [];
-const isheabitableplanate_array = [];
+const isheabitableplanet_array = [];
 
-function isheabitableplanate(data){
+function isheabitableplanet(data){
   if( data['koi_disposition'] === 'CONFIRMED'
   && data['koi_insol'] > 0.36 && data['koi_insol'] < 1.11
   && data['koi_prad'] < 1.6){
@@ -21,8 +21,8 @@ fs.createReadStream('kepler_data.csv')
     columns : true,
 }))
 .on('data', function(data){
-    if(isheabitableplanate(data) === true){
-        isheabitableplanate_array.push(data);
+    if(isheabitableplanet(data) === true){
+        isheabitableplanet_array.push(data);
     }
     result.push(data);
 
@@ -31,9 +31,9 @@ fs.createReadStream('kepler_data.csv')
     console.log(err);
 })
 .on('end',function(){
-    console.log(isheabitableplanate_array.map(function(data){
+    console.log(isheabitableplanet_array.map(function(data){
         return data['kepler_name'];
     }))
-    // console.log(isheabitableplanate_array);
-    console.log(`You find the total: ${isheabitableplanate_array.length}`);
+    // console.log(isheabitableplanet_array);
+    console.log(`You find the total: ${isheabitableplanet_array.length}`);
 });

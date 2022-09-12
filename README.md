@@ -6,3 +6,7 @@ It simpaly search the Seff for each nd every planate whose location is confirmed
  
  <br>
  The latest refinements of this work by Ravi Kopparapu (Pennsylvania State University) and his collaborators define the inner limit of the HZ to correspond to the Seff where a moist runaway greenhouse effect sets in. At higher effective stellar flux values, skyrocketing surface temperatures and the loss of a planet’s allotment of water in a geologically brief period of time will result. For an Earth-size planet orbiting a Sun-like star, this limit corresponds to an Seff of about 1.11. The Seff corresponding to this inner limit of the HZ would be slightly higher for planets more massive than the Earth and slightly lower for stars cooler than the Sun.
+ 
+ #Result
+ ![image](https://user-images.githubusercontent.com/94931828/189776033-1825eaf9-fd19-4308-a6ad-4de26be20255.png)
+
